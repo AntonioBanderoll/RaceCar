@@ -24,6 +24,13 @@ public class RoadGeneration : MonoBehaviour
         {
             road.transform.position -= new Vector3(0, 0, _speed * Time.deltaTime);
         }
+
+        if (_roads[0].transform.position.z < -30)
+        {
+            Destroy(_roads[0]);
+            _roads.RemoveAt(0);
+            CreatorRoad();
+        }
     }
 
     public void StartLevel()
