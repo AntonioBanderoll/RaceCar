@@ -8,7 +8,7 @@ public class RoadGeneration : MonoBehaviour
     [SerializeField] private float _maxSpeed;
     [SerializeField] private float _speed;
     [SerializeField] private int _maxRoadCount;
-
+    
     private List<GameObject> _roads = new List<GameObject>();
 
     private void Start()
